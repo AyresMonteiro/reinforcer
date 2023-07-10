@@ -40,3 +40,18 @@ test("it should create user", async () => {
   expect(newUser.email).toStrictEqual(payload.email);
   expect(newUser.password).toStrictEqual(undefined);
 });
+
+test("it should create user with id", async () => {
+  const { usecase, payload } = makeSut();
+
+  const newUser = await usecase.execute(payload);
+
+  expect(newUser).not.toStrictEqual(undefined);
+  expect(typeof newUser).toStrictEqual("object");
+  expect(newUser.id).not.toStrictEqual(undefined);
+  expect(newUser.id).not.toStrictEqual("");
+  expect(typeof newUser.id).toStrictEqual("string");
+  expect(newUser.name).toStrictEqual(payload.name);
+  expect(newUser.email).toStrictEqual(payload.email);
+  expect(newUser.password).toStrictEqual(undefined);
+});
