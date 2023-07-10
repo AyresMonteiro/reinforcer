@@ -7,11 +7,7 @@
 
 import { faker } from "@faker-js/faker";
 
-interface User {
-  name: string;
-  email: string;
-  password?: string;
-}
+import { User } from "../domain/types/user";
 
 class UserEntity implements User {
   constructor(private readonly data: User) {}
