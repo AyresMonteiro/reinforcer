@@ -2,7 +2,7 @@
   "name": "reinforcer",
   "version": "1.0.0",
   "description": "A backend for a quiz app.",
-  "main": "build/index.js",
+  "main": "build/src/index.js",
   "repository": "https://github.com/AyresMonteiro/reinforcer",
   "author": "AyresMonteiro <ayresmonteiro52@gmail.com>",
   "license": "MIT",
@@ -12,5 +12,11 @@
   },
   "dependencies": {
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.6.1",
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.1",
+    "ts-jest": "^29.1.1"
   }
 }
