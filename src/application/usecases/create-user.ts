@@ -9,7 +9,7 @@ export class CreateUser implements Usecase<User, UserEntity> {
   constructor(private readonly saveUser: SaveUserAction) {}
 
   async execute(data: User): Promise<UserEntity> {
-    const newUser = await this.saveUser.execute(data);
+    const newUser = await this.saveUser.save(data);
 
     return newUser;
   }

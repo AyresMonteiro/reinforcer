@@ -9,10 +9,10 @@ import { faker } from "@faker-js/faker";
 
 import { CreateUser } from "../../src/application/usecases/create-user";
 
-import { InMemorySaveUserAction } from "../../src/infra/in-memory/actions/save-user";
+import { InMemoryUserRepository } from "../../src/infra/in-memory/repositories/user";
 
 function makeSut() {
-  const saveUserAction = new InMemorySaveUserAction();
+  const saveUserAction = new InMemoryUserRepository();
 
   const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();

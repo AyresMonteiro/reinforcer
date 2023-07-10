@@ -3,10 +3,10 @@ import { UserEntity } from "../../../domain/entities/user";
 
 import { SaveUserAction } from "../../../data/user/save";
 
-export class InMemorySaveUserAction implements SaveUserAction {
+export class InMemoryUserRepository implements SaveUserAction {
   private users: UserEntity[] = [];
 
-  async execute(data: User): Promise<UserEntity> {
+  async save(data: User): Promise<UserEntity> {
     const newUser = new UserEntity(data);
 
     this.users.push(newUser);
