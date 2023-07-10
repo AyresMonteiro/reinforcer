@@ -8,14 +8,13 @@
 import { faker } from "@faker-js/faker";
 
 import { User } from "../domain/types/user";
+
 import { UserEntity } from "../domain/entities/user";
+
+import { SaveUserAction } from "../data/user/save";
 
 interface Usecase<Input, Output> {
   execute(data: Input): Promise<Output>;
-}
-
-interface SaveUserAction {
-  execute(data: User): Promise<UserEntity>;
 }
 
 class CreateUser implements Usecase<User, UserEntity> {
