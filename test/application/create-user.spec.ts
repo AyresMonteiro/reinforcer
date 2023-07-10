@@ -13,9 +13,7 @@ import { UserEntity } from "../domain/entities/user";
 
 import { SaveUserAction } from "../data/user/save";
 
-interface Usecase<Input, Output> {
-  execute(data: Input): Promise<Output>;
-}
+import { Usecase } from "../application/contracts/usecase";
 
 class CreateUser implements Usecase<User, UserEntity> {
   constructor(private readonly saveUser: SaveUserAction) {}
