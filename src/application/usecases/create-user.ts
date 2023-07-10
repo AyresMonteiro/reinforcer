@@ -8,7 +8,9 @@ import { Usecase } from "../contracts/usecase";
 export class CreateUser implements Usecase<User, UserEntity> {
   constructor(private readonly saveUser: SaveUserAction) {}
 
-  async execute(data: User): Promise<UserEntity> {
+  async execute(
+    data: Pick<User, "name" | "email" | "password">
+  ): Promise<UserEntity> {
     const newUser = await this.saveUser.save(data);
 
     return newUser;
