@@ -84,7 +84,7 @@ function makeSut() {
   };
 }
 
-test("should create user", async () => {
+test("it should create user", async () => {
   const { usecase, payload } = makeSut();
 
   const newUser = await usecase.execute(payload);
