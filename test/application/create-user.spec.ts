@@ -7,9 +7,9 @@
 
 import { faker } from "@faker-js/faker";
 
-import { CreateUser } from "./usecases/create-user";
+import { CreateUser } from "../../src/application/usecases/create-user";
 
-import { InMemorySaveUserAction } from "../infra/in-memory/actions/save-user";
+import { InMemorySaveUserAction } from "../../src/infra/in-memory/actions/save-user";
 
 function makeSut() {
   const saveUserAction = new InMemorySaveUserAction();
