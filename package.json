@@ -1,0 +1,10 @@
+{
+  "name": "reinforcer",
+  "version": "1.0.0",
+  "description": "A backend for a quiz app.",
+  "main": "index.js",
+  "repository": "https://github.com/AyresMonteiro/reinforcer",
+  "author": "AyresMonteiro <ayresmonteiro52@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
