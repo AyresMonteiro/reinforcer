@@ -13,17 +13,7 @@ import { UserEntity } from "../domain/entities/user";
 
 import { SaveUserAction } from "../data/user/save";
 
-import { Usecase } from "../application/contracts/usecase";
-
-class CreateUser implements Usecase<User, UserEntity> {
-  constructor(private readonly saveUser: SaveUserAction) {}
-
-  async execute(data: User): Promise<UserEntity> {
-    const newUser = await this.saveUser.execute(data);
-
-    return newUser;
-  }
-}
+import { CreateUser } from "./usecases/create-user";
 
 class InMemorySaveUserAction implements SaveUserAction {
   private users: UserEntity[] = [];
