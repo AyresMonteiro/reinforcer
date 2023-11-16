@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" modified="2023-11-16T20:19:24.670Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" etag="SdBmy7w7Mslnt54-EE7S" version="22.1.2" type="device">
+  <diagram name="Page-1" id="AQ0Lg_LlYWjeNMZIF1Sx">
+    <mxGraphModel dx="2427" dy="1985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;" edge="1" parent="1" source="CqWbgmKGOAtB_0wta6gh-3" target="CqWbgmKGOAtB_0wta6gh-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-25" value="&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Wraps&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;everything&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-24">
+          <mxGeometry x="0.037" y="-5" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-3" value="&lt;div&gt;&lt;font style=&quot;font-size: 40px;&quot;&gt;Main Layer&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 26px;&quot;&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;Wraps other layers into&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 26px;&quot;&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;the application&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="180" width="380" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-23" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Unwrapped layers&lt;br&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="-150" width="1030" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-5" value="&lt;div style=&quot;font-size: 30px;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Application Layer&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;Handle core business&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;logic&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="CqWbgmKGOAtB_0wta6gh-23">
+          <mxGeometry x="320" y="290" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-6" value="&lt;div style=&quot;font-size: 30px;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Domain Layer&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;Defines business main entities&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="CqWbgmKGOAtB_0wta6gh-23">
+          <mxGeometry x="710" y="40" width="310" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.249;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-5" target="CqWbgmKGOAtB_0wta6gh-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621" y="692" as="sourcePoint" />
+            <mxPoint x="769" y="279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-19" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Consumes types of&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-18">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint x="10" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-2" value="&lt;div style=&quot;font-size: 30px;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Infra Layer&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Implements interfaces of data and application layers using code commonly bound to current infrastructure and third party libraries&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;" vertex="1" parent="CqWbgmKGOAtB_0wta6gh-23">
+          <mxGeometry x="500" y="540" width="490" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-2" target="CqWbgmKGOAtB_0wta6gh-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="507" y="478" as="sourcePoint" />
+            <mxPoint x="380" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-15" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Consumes types of&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-14">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint x="-12" y="-65" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-2" target="CqWbgmKGOAtB_0wta6gh-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="510" as="sourcePoint" />
+            <mxPoint x="555" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-17" value="&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Provides&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;implementations for&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-16">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint x="108" y="-36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-4" value="&lt;div style=&quot;font-size: 30px;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Data Layer&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 26px;&quot;&gt;Provides interfaces to the application layer&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="CqWbgmKGOAtB_0wta6gh-23">
+          <mxGeometry x="30" y="50" width="320" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-4" target="CqWbgmKGOAtB_0wta6gh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-11" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Provides actions for&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-10">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.27;exitY=0.06;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-5" target="CqWbgmKGOAtB_0wta6gh-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="643" y="410" as="sourcePoint" />
+            <mxPoint x="767" y="293" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-21" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Consumes actions of&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-20">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint x="19" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.009;exitY=0.596;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.219;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=5;" edge="1" parent="CqWbgmKGOAtB_0wta6gh-23" source="CqWbgmKGOAtB_0wta6gh-2" target="CqWbgmKGOAtB_0wta6gh-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="363" y="404" as="sourcePoint" />
+            <mxPoint x="486" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CqWbgmKGOAtB_0wta6gh-13" value="&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Implements&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;actions of&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CqWbgmKGOAtB_0wta6gh-12">
+          <mxGeometry x="-0.2393" y="2" relative="1" as="geometry">
+            <mxPoint x="-17" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
