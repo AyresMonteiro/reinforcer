@@ -15,8 +15,8 @@ export class UserEntity implements User {
     return this.data["email"];
   }
 
-  get password(): string | undefined {
-    return this.data["password"];
+  get password(): string {
+    return this.data["password"] ?? "";
   }
 
   plain() {
