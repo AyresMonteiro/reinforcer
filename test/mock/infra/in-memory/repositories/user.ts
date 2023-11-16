@@ -1,7 +1,6 @@
-import { User } from "../../../domain/types/user";
-import { UserEntity } from "../../../domain/entities/user";
-
-import { SaveUserAction } from "../../../data/user/save";
+import { SaveUserAction } from "../../../../../src/data/user/save";
+import { User } from "../../../../../src/domain/types/user";
+import { UserEntity } from "../../../../../src/domain/entities/user";
 
 export class InMemoryUserRepository implements SaveUserAction {
   private users: UserEntity[] = [];
