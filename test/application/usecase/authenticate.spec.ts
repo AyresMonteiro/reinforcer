@@ -6,13 +6,13 @@
 
 import { faker } from "@faker-js/faker";
 
-import { Login } from "../../src/application/usecases/login";
-import { CreateUser } from "../../src/application/usecases/create-user";
-import { Authenticate } from "../../src/application/usecases/authenticate";
+import { Login } from "../../../src/application/usecases/login";
+import { CreateUser } from "../../../src/application/usecases/create-user";
+import { Authenticate } from "../../../src/application/usecases/authenticate";
 
-import { InMemoryUserRepository } from "../mock/infra/in-memory/repositories/user";
-import { MockHashStringHelper } from "../mock/infra/helper/string/hash";
-import { MockAuthHelper } from "../mock/infra/helper/auth/credentials";
+import { InMemoryUserRepository } from "../../mock/infra/in-memory/repositories/user";
+import { MockHashStringHelper } from "../../mock/infra/helper/string/hash";
+import { MockAuthHelper } from "../../mock/infra/helper/auth/credentials";
 
 function makeSut() {
   const compareHashStringAction = new MockHashStringHelper();

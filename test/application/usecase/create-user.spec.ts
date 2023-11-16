@@ -7,10 +7,10 @@
 
 import { faker } from "@faker-js/faker";
 
-import { CreateUser } from "../../src/application/usecases/create-user";
+import { CreateUser } from "../../../src/application/usecases/create-user";
 
-import { InMemoryUserRepository } from "../mock/infra/in-memory/repositories/user";
-import { MockHashStringHelper } from "../mock/infra/helper/string/hash";
+import { InMemoryUserRepository } from "../../mock/infra/in-memory/repositories/user";
+import { MockHashStringHelper } from "../../mock/infra/helper/string/hash";
 
 function makeSut() {
   const hashStringAction = new MockHashStringHelper();
