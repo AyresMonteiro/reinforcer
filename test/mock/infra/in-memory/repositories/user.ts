@@ -1,8 +1,11 @@
 import { SaveUserAction } from "../../../../../src/data/user/save";
 import { User } from "../../../../../src/domain/types/user";
 import { UserEntity } from "../../../../../src/domain/entities/user";
+import { GetUserByEmailAction } from "../../../../data/user/get-by-email";
 
-export class InMemoryUserRepository implements SaveUserAction {
+export class InMemoryUserRepository
+  implements SaveUserAction, GetUserByEmailAction
+{
   private users: UserEntity[] = [];
 
   async save(
@@ -16,5 +19,11 @@ export class InMemoryUserRepository implements SaveUserAction {
     this.users.push(newUser);
 
     return newUser;
+  }
+
+  async getByEmail(email: string): Promise<UserEntity | null> {
+    const user = this.users.find((user) => user.email === email);
+
+    return user ?? null;
   }
 }
