@@ -11,7 +11,7 @@ export interface JoseJWTAuthHelperProps {
   encryptionKey: string;
   issuer: string;
   audience: string;
-  expirationTime: string;
+  expiresIn: string;
 }
 
 export class JoseJWTAuthHelper
@@ -23,7 +23,7 @@ export class JoseJWTAuthHelper
       encryptionKey: getEnvironmentVariable("JWT_ENCRYPTION_KEY"),
       issuer: getEnvironmentVariable("JWT_ISSUER"),
       audience: getEnvironmentVariable("JWT_AUDIENCE"),
-      expirationTime: "1h",
+      expiresIn: "1h",
     }
   ) {}
 
@@ -41,7 +41,7 @@ export class JoseJWTAuthHelper
       .setIssuedAt()
       .setIssuer(this.props.issuer)
       .setAudience(this.props.audience)
-      .setExpirationTime(this.props.expirationTime);
+      .setExpirationTime(this.props.expiresIn);
 
     return await signer.sign(this.privateKey);
   }
@@ -52,7 +52,7 @@ export class JoseJWTAuthHelper
       .setIssuedAt()
       .setIssuer(this.props.issuer)
       .setAudience(this.props.audience)
-      .setExpirationTime(this.props.expirationTime);
+      .setExpirationTime(this.props.expiresIn);
 
     return await encrypter.encrypt(this.encryptionKey);
   }
