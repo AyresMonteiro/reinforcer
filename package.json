@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "start": "node build/src/main/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
