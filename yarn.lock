@@ -1024,6 +1024,11 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+brill@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/brill/-/brill-3.1.0.tgz#e960ae19cee457ec5cd6ef34b15d6773274bfcb9"
+  integrity sha512-A2PkfAOvBQAkQRxTbOpHlvO2/GD3C9C2UXh5smA13icDBAPGZJHXu28kR4yUMTKAf9fmtgaYZKgk5ES07qrAtw==
+
 browserslist@^4.21.9:
   version "4.21.9"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.9.tgz#e11bdd3c313d7e2a9e87e8b4b0c7872b13897635"
@@ -2712,6 +2717,14 @@ queue-tick@^1.0.1:
   resolved "https://registry.yarnpkg.com/queue-tick/-/queue-tick-1.0.1.tgz#f6f07ac82c1fd60f82e098b417a80e52f1f4c142"
   integrity sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==
 
+rake-pos@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/rake-pos/-/rake-pos-1.0.17.tgz#68fc77792ae3003bc9367cc0f236239b95f4c8d2"
+  integrity sha512-sKfUegrWRpVNmglOhZntdhBWA8d9HUxY6v4OvFba57cmpnnUYvreHKhc7iD4g9wmoxi/RIKonArZvDHKojJU5A==
+  dependencies:
+    brill "^3.1.0"
+    stopwords-iso "^1.1.0"
+
 range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
@@ -2940,6 +2953,11 @@ statuses@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
+
+stopwords-iso@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stopwords-iso/-/stopwords-iso-1.1.0.tgz#dc303db6b0842d4290bc1339b4eaf37b94219395"
+  integrity sha512-I6GPS/E0zyieHehMRPQcqkiBMJKGgLta+1hREixhoLPqEA0AlVFiC43dl8uPpmkkeRdDMzYRWFWk5/l9x7nmNg==
 
 streamx@^2.15.0:
   version "2.15.5"

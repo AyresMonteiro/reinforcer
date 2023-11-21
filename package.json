@@ -20,6 +20,7 @@
     "jose": "^5.1.1",
     "mongodb-memory-server": "^9.1.1",
     "mongoose": "^8.0.1",
+    "rake-pos": "^1.0.17",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
