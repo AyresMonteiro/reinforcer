@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
     "start": "node build/src/main/index.js"
   },
   "dependencies": {
